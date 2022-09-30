@@ -1,0 +1,16 @@
+{
+    "name": "omar/php-mvc",
+    "description": "Create a custom light size PHP MVC framework to help understand how large frameworks work.",
+    "authors": [
+        {
+            "name": "Omar Tarek",
+            "email": "omartarek611@outlook.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "./"
+        }
+    },
+    "require": {}
+}
