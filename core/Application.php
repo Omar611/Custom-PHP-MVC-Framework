@@ -11,17 +11,16 @@ namespace app\core;
 class Application
 {
     public Router $router;
+    public Request $request;
 
     public function __construct()
     {
-        // create new instance of Router class
-        $this->router = new Router();
+        $this->request = new Request();
+        $this->router = new Router($this->request);
     }
 
-    // create run method
     public function run()
     {
-        // call method from Router class
-        $this->router->run();
+        $this->router->resolve();
     }
 }
