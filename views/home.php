@@ -1,3 +1,3 @@
 <h1 class="text-canter mt-4">
-  Home Page
+  Welcome Home <?= $name ?>
 </h1>
