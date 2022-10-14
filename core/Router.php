@@ -28,11 +28,12 @@ class Router
     $path = $this->request->getPath();
     $method = $this->request->getMethod();
     $callback = $this->routes[$method][$path] ?? false;
-    if(!$callback){
+    if (!$callback) {
+      Application::$app->response->setStatusCode(404);
       return "404 Page Not found";
       exit;
     }
-    if(is_string($callback)){
+    if (is_string($callback)) {
       return $this->renderView($callback);
     }
     return call_user_func($callback);
