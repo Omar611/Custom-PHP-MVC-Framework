@@ -25,11 +25,17 @@ class Router
 
   public function resolve()
   {
-    $this->request->getPath();
+    $path = $this->request->getPath();
+    $method = $this->request->getMethod();
+    $callback = $this->routes[$method][$path] ?? false;
+    if(!$callback){
+      echo "404 Page Not found";
+      exit;
+    }
+    echo call_user_func($callback);
   }
 
   public function run()
   {
-  
   }
 }
