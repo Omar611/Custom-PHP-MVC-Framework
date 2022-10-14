@@ -1,3 +1,3 @@
 <h1 class="text-canter mt-4">
-  Contact Us
+  Home Page
 </h1>
