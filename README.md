@@ -27,19 +27,16 @@ Create a custom light size PHP MVC framework to help understand how large framew
 - [x] Custom error pages
 
 ## Requirements:
-- PHP 7.4
+- PHP 7.4 or higher
 - Composer
 - MySQL
 
 ## Installation:
 1. Clone the repository
 2. Run `composer install`
-3. Create a database and import the `database.sql` file
-4. Update the database credentials in `config/database.php`
-5. Update the `BASE_URL` in `config/app.php`
-6. Run `php -S localhost:8000 -t public` to start the server
-7. Visit `http://localhost:8000` to view the application
-8. Rock and roll! 🤘
+3. Run `php -S localhost:8000 -t public` to start the server
+4. Visit `http://localhost:8000` to view the application
+5. Rock and roll! 🤘
 
 ## License:
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
