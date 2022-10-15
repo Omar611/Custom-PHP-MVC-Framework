@@ -3,15 +3,16 @@
 namespace app\controllers;
 
 use app\core\Application;
+use app\core\Controller;
 
-class SiteController
+class SiteController extends Controller
 {
   public function home()
   {
     $param = [
       'name' => 'Omar Tarek'
     ];
-    return Application::$app->router->renderView('home', $param);
+    return $this->render('home', $param);
   }
 
   public function contact()
