@@ -4,6 +4,7 @@ namespace app\controllers;
 
 use app\core\Application;
 use app\core\Controller;
+use app\core\Request;
 
 class SiteController extends Controller
 {
@@ -20,8 +21,10 @@ class SiteController extends Controller
     return $this->render('contact');
   }
 
-  public function handelContact()
+  public function handelContact(Request $request)
   {
-    return 'handel submitted data';
+    $body = $request->getBody();
+    // Do some logic
+    return json_encode($body);
   }
 }
