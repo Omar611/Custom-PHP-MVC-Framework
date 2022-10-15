@@ -17,7 +17,7 @@ class SiteController extends Controller
 
   public function contact()
   {
-    return Application::$app->router->renderView('contact');
+    return $this->render('contact');
   }
 
   public function handelContact()
